@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: black; /* Set background color to black */
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 0; /* Remove gap between cells */
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: transparent; /* Make cell background transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid white; /* White border for each cell */
+}
+
+.cell:hover {
+    background-color: #444; /* Darker shade on hover */
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: white; /* Change message color to white */
+}
